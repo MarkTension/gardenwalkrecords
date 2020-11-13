@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/gardenwalkrecords/static/css/main.ec2c0500.chunk.css",
+    "main.js": "/gardenwalkrecords/static/js/main.b6cb4148.chunk.js",
+    "main.js.map": "/gardenwalkrecords/static/js/main.b6cb4148.chunk.js.map",
+    "runtime-main.js": "/gardenwalkrecords/static/js/runtime-main.f3759e79.js",
+    "runtime-main.js.map": "/gardenwalkrecords/static/js/runtime-main.f3759e79.js.map",
+    "static/js/2.e279f85b.chunk.js": "/gardenwalkrecords/static/js/2.e279f85b.chunk.js",
+    "static/js/2.e279f85b.chunk.js.map": "/gardenwalkrecords/static/js/2.e279f85b.chunk.js.map",
+    "index.html": "/gardenwalkrecords/index.html",
+    "precache-manifest.39f9c7e01102de56ffa760e4964a8b6a.js": "/gardenwalkrecords/precache-manifest.39f9c7e01102de56ffa760e4964a8b6a.js",
+    "service-worker.js": "/gardenwalkrecords/service-worker.js",
+    "static/css/main.ec2c0500.chunk.css.map": "/gardenwalkrecords/static/css/main.ec2c0500.chunk.css.map",
+    "static/js/2.e279f85b.chunk.js.LICENSE.txt": "/gardenwalkrecords/static/js/2.e279f85b.chunk.js.LICENSE.txt",
+    "static/media/m4.png": "/gardenwalkrecords/static/media/m4.e4bfe799.png",
+    "static/media/springwalkcollection.png": "/gardenwalkrecords/static/media/springwalkcollection.9cd515ae.png",
+    "static/media/stringPalooza2.png": "/gardenwalkrecords/static/media/stringPalooza2.57200ce8.png",
+    "static/media/subconsciousGarden.png": "/gardenwalkrecords/static/media/subconsciousGarden.82aa238e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3759e79.js",
+    "static/js/2.e279f85b.chunk.js",
+    "static/css/main.ec2c0500.chunk.css",
+    "static/js/main.b6cb4148.chunk.js"
+  ]
+}
