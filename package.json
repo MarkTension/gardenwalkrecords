@@ -1,6 +1,6 @@
 {
   "name": "spruce_records",
-  "homepage": "gardenwalkrecords.nl",
+  "homepage": "https://gardenwalkrecords.nl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
