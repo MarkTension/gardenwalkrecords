@@ -13,6 +13,14 @@
   pointer-events: none;
 }
 
+a {
+    text-align: center;
+    /* font-weight: 600; */
+    color: #FF8484;
+    text-decoration: underline;
+
+}
+
 
 .App-header {
   background-color: #FFD99B;

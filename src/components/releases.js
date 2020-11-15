@@ -5,6 +5,8 @@ import stringpaloozaImage from "../images/stringPalooza2.png";
 import springwalkcollection from "../images/springwalkcollection.png";
 import {Item, Hoverr, Title} from "./textConstants";
 import { Box, Flex, Image } from "rebass";
+import { Link } from 'react-router-dom';
+
 
 
 const releaseStylesheet = {
@@ -12,7 +14,8 @@ const releaseStylesheet = {
     paddingLeft: "3%",
     paddingRight: "3%",
     height: "100%",
-    borderRadius: "10px"
+    borderRadius: "10px",
+    cursor: "pointer"
   };
 
 const Button = styled.button`
@@ -26,8 +29,29 @@ const Button = styled.button`
   font-weight:200;
 `;
 
+
+
   class Releases extends React.Component {
+
+    
+
     render() {
+        function goToSpring(e) {
+            e.preventDefault();
+            window.open('https://tensenpark.bandcamp.com/releases', '_blank');
+
+          }
+          function goToPalooza(e) {
+            e.preventDefault();
+            window.open('https://lancehoot.bandcamp.com/album/string-palooza', '_blank');
+
+          }
+          function goTom4(e) {
+            e.preventDefault();
+            window.open('https://lancehoot.bandcamp.com/album/m4', '_blank');
+
+          }
+          
       return (
         <div id="releases" style = {{marginTop:"4%"}}  >
             <Title>
@@ -39,15 +63,16 @@ const Button = styled.button`
                 width="100%"
                 style={{ marginBottom: "0%", paddingBottom:"0px"}}
             >
-                <Box p={[1]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet}>
+
+                <Box href={"google.com"} p={[1]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet} onClick={goToSpring}>
                     <Image src={springwalkcollection} width="100%" />
                     
                 </Box>
-                <Box p={[1]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet}>
+                <Box p={[1]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet} onClick={goToPalooza}>
                     <Image src={stringpaloozaImage} width="100%" />
                     
                 </Box>
-                <Box p={[1]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet}>
+                <Box p={[1]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet} onClick={goTom4}>
                     <Image src={m4} width="100%" />
                     
                 </Box>
@@ -67,7 +92,7 @@ const Button = styled.button`
                     <Item style={{fontSize:"0.8em"}}>
                     November/23/2020
                     </Item>
-                    <Button > .zip</Button> <Button> spotify </Button>
+                    {/* <Button > .zip</Button> <Button> spotify </Button> */}
                 </Box>
                 <Box p={[0]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet}>
                     <Item>
@@ -79,7 +104,7 @@ const Button = styled.button`
                     <Item style={{fontSize:"0.8em"}}>
                     September/04/2020
                     </Item>
-                    <Button > .zip</Button> <Button> spotify </Button>
+                    {/* <Button > .zip</Button> <Button> spotify </Button> */}
                     
                 </Box>
                 <Box p={[0]} m={[0]} width={[1, 1 / 3]} style={releaseStylesheet}>
@@ -93,7 +118,7 @@ const Button = styled.button`
                     <Item style={{fontSize:"0.8em"}}>
                     September/22/2018
                     </Item>
-                    <Button > .zip</Button> <Button> spotify </Button>
+                    {/* <Button > .zip</Button> <Button> spotify </Button> */}
                 </Box>
             </Flex>
 

@@ -11,7 +11,7 @@ const HoverLinks = styled.h3`
     font-weight: 100;
     top: 10%;
     right: 5%;
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-align: center;
     color: #FF8484;
     z-index: 100;
@@ -27,24 +27,29 @@ const HoverLinks = styled.h3`
 
 const Landing = props => {
     return (
-        <div id="landing" style = {{marginTop:"2%",height:"100vh"}} >
+        <div id="landing" style = {{marginTop:"2%",height:"100vh",align:"right"}} >
             <Hoverr>
             Garden Walk Records
             </Hoverr>
             <HoverLinks style={{right:"12%",cursor:"pointer"}}>
-              bandcamp
+              <a href="https://tensenpark.bandcamp.com/releases">Tensen Park release</a>
             </HoverLinks>
             <HoverLinks style={{top:"18%",right:"8%",cursor:"pointer"}}>
-              instagram
+            <a href="https://www.facebook.com/MRFrecordings/"> MRF recordings </a>
+
             </HoverLinks>
             <HoverLinks style={{top:"26%",cursor:"pointer"}}>
-              spotify
+            <a href="mailto:tensen.mark@gmail.com">contact us</a>
+
             </HoverLinks>
 
             <img src={gardenImage} style={{marginRight:"10%"}} className="label-logo" alt="logo"/>
 
-            <Item>
-              This is a label. Experimental ventures into danceable and non-danceable states of being.
+            <Item style={{width:"80%",alignContent:"right"}}>
+              Garden Walk Records is an Amsterdam-based label, presenting explorations of balancing chaos and order using new computational methods, and old analog equipment.
+            </Item>
+             <Item style={{width:"80%",justifyContent:"right"}}>
+              For info, inquiries or licensing, please <a href="mailto:tensen.mark@gmail.com"> contact us</a>
             </Item>
         </div>
 
