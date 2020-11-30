@@ -1,8 +1,11 @@
 import React from "react";
 import styled from 'styled-components'
 import gardenImage from "../images/subconsciousGarden.png";
-import {Item, Hoverr, HoverText} from "./textConstants";
+import {Item, Hoverr, HoverText, Text} from "./textConstants";
 // import { Box, Flex, Image } from "rebass";
+import BandcampPlayer from 'react-bandcamp'
+import {isBrowser} from 'react-device-detect';
+
 
 
 const HoverLinks = styled.h3`
@@ -25,32 +28,52 @@ const HoverLinks = styled.h3`
 `;
 
 
+function ImageMobile() {
+
+  if (isBrowser) {
+    return <img src={gardenImage} height="100%" style={{marginRight:"5%"}} className="label-logo" alt="logo"/>
+  }
+  else{
+    return <img src={gardenImage} width="100%"  className="label-logo" alt="logo"/>
+  }
+}
+
+
+
 const Landing = props => {
     return (
-        <div id="landing" style = {{marginTop:"2%",height:"100vh",align:"right"}} >
+        <div id="landing" style = {{marginTop:"2%",height:"100vh",alignContent:"right"}} >
+
             <Hoverr>
             Garden Walk Records
             </Hoverr>
+            
             <HoverLinks style={{right:"12%",cursor:"pointer"}}>
-              <a href="https://tensenpark.bandcamp.com/releases">Tensen Park release</a>
+            <a href="https://www.instagram.com/gardenwalk.records/"> Follow us on Instagram </a>
             </HoverLinks>
             <HoverLinks style={{top:"18%",right:"8%",cursor:"pointer"}}>
             <a href="https://www.facebook.com/MRFrecordings/"> MRF recordings </a>
-
             </HoverLinks>
+            
             <HoverLinks style={{top:"26%",cursor:"pointer"}}>
             <a href="mailto:tensen.mark@gmail.com">contact us</a>
-
             </HoverLinks>
 
-            <img src={gardenImage} style={{marginRight:"10%"}} className="label-logo" alt="logo"/>
+            < ImageMobile />
 
-            <Item style={{width:"80%",alignContent:"right"}}>
-              Garden Walk Records is an Amsterdam-based label, presenting explorations of balancing chaos and order using new computational methods, and old analog equipment.
+            <Item style={{width:"90%",textAlign:"right",fontSize:"0.9em"}}>
+              Amsterdam-based experimental music label.
+              </Item>
+              <Item style={{width:"90%",textAlign:"right",fontSize:"0.9em"}}>
+              We release experiments exploring: 'What is peak-aliveness of sound?''
+              </Item>
+            
+            <Item style={{width:"90%",textAlign:"right",fontSize:"0.9em"}}>
+              Stay updated on our releases via <a href="https://www.instagram.com/gardenwalk.records/">instagram</a>.
+              For info, or licensing, <a href="mailto:tensen.mark@gmail.com"> email us</a>
+
             </Item>
-             <Item style={{width:"80%",justifyContent:"right"}}>
-              For info, inquiries or licensing, please <a href="mailto:tensen.mark@gmail.com"> contact us</a>
-            </Item>
+
         </div>
 
         

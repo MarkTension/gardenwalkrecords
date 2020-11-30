@@ -1,31 +1,30 @@
 import React from "react";
-import styled from 'styled-components'
-import gardenImage from "../images/subconsciousGarden.png";
 import {Item, Title} from "./textConstants"
+import { SocialIcon } from 'react-social-icons';
+
 
 
 const About = props => {
-    return (<div id="about" style = {{height:"100vh"}}>
-        
+    return (<div id="about">
             <Title>
             About
             </Title>
-        <div id="about" style = {{height:"100vh",width:"50vw"}}>
-
-            <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-                This is an Amsterdam based label.</Item>
-            <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-                Garden Walk Records was born to express a deep, feeling that does not describe a particular scene or place, but something of our own inner scenery. 
-            </Item>
-            <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-                This platform has allowed myself and the label’s artists to create imagery through music and sound, affecting our audience in the most subliminal way.
-            </Item>      
-            <Item style={{fontSize: "1.2em",textAlign:"left"}}>
-    
-                We like to juxtapose the subtle exloration of more deep-listening / ambient works with other works that purue similar ideas, but in a sprinkling manner, staying within the framework of popular music.
-
-            </Item>           
-        </div></div>
+        
+            <div id="about" style = {{height:"100vh",width:"50vw",marginLeft:"10%"}}>
+                <Item style={{fontSize: "1.2em",textAlign:"left"}}>
+                We release experiments in sound. This can be from coding endeavors, to glitching old analog equipment.</Item>
+                <Item style={{fontSize: "1.2em",textAlign:"left"}}>
+                This label provides artists with a platform to keep a record of research, and further integrate and cultivate these into beautiful music.
+                </Item> 
+                <Item style={{fontSize: "1.2em",textAlign:"left"}}>
+                Much like plants in a garden, we display our releases, and hopefully polinate and cross-over into new directions. </Item>      
+                <Item style={{fontSize: "1.2em",textAlign:"left"}}>
+                Aside from experimenting, this is about making beautiful music. The vision and approach is what unites the artists
+                </Item> 
+                <SocialIcon url="https://www.instagram.com/gardenwalk.records/" bgColor="white"/>
+        
+            </div>
+        </div>
         );
   };
   export default About

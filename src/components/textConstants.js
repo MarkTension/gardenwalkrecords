@@ -11,6 +11,20 @@ const Item = styled.h3`
     color: #FF8484;
     font-weight:100;
 `;
+const ItemSmall = styled.h3`
+
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    font-weight:100;
+`;
+
+const Text = styled.text`
+  textAlign: left;
+  font-size: 1.0em;
+  color: #FF8484;
+  font-weight:100;
+`;
 
 const Hoverr = styled.h3`
     position: absolute;
@@ -47,14 +61,15 @@ const Title = styled.h3`
 `;
 
 const Button = styled.button`
-  font-size: 1.7em;
+  font-size: 1em;
   text-align: center;
-  background-color: white;
-  border:none;
-  border-radius: "10px";
-  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
   color: #FF8484;
-  font-weight:200;
+  font-weight:400;
   transition: transform 100ms ease-in-out;
   &:hover {
     transform: scale(1.2);
@@ -63,4 +78,4 @@ const Button = styled.button`
   }
 `;
 
-export {Item, Hoverr, Title, HoverText, Button}
+export {Item, Hoverr, Title, HoverText, Button, Text, ItemSmall}

@@ -1,8 +1,11 @@
 import React from "react";
 import styled from 'styled-components'
-import gardenImage from "../images/subconsciousGarden.png";
 import {Item, Title, Button} from "./textConstants";
 import Feature from "./featureDescriptor"
+import hootIm from "../images/lanceHoot.JPG";
+import tensenIm from "../images/tensenParkArtist.jpg";
+import ReactGA from 'react-ga';
+
 
 
 const HoverText = styled.h3`
@@ -16,6 +19,12 @@ const HoverText = styled.h3`
     z-index: 100;
 `;
 
+var imDict = {
+  "Lance Hoot": hootIm,
+  "Tensen Park": tensenIm
+};
+var imArray = [hootIm, tensenIm]
+var counter = 0
 
 class Artists extends React.Component {
   constructor(props) {
@@ -24,14 +33,39 @@ class Artists extends React.Component {
       showNames: true,
       nameActive: 0,
       round: this.props.round,
-      artistName: "none"
+      artistName: "none",
+      image: imDict["Lance Hoot"]
     };
+    
+  }
+
+  tick() {
+    if (this.state.showNames == true) {
+      this.setState({
+        image: imArray[counter%2]
+      });
+      counter+=1
+    }
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.tick(), 3000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   ProcessClick(event){
     const id = event.target.id;
-    console.log("click processed " + id)
-    this.setState({showNames: false, artistName:event.target.id})
+    var image = imDict[id]
+    this.setState({showNames: false, artistName:id, image: image})
+
+    ReactGA.event({
+      category: 'Viewer',
+      action: 'Clicked on artist ' + id
+    });
+
   }
 
   CloseArtist(event){
@@ -41,8 +75,9 @@ class Artists extends React.Component {
 
   render() {
     return (
-
       <div id="artists" style = {{height:"100vh"}}>
+        <section  style={{backgroundImage: "url(" + this.state.image + ")",height:"100vh",marginLeft:"0%",backgroundSize: "100%"}}>
+
           <Title>
             Artists
           </Title>
@@ -53,14 +88,15 @@ class Artists extends React.Component {
           </div> 
           :
           <div>
-          <Button onClick={this.CloseArtist.bind(this)} style={{marginLeft:"0%",paddingLeft:"0%",cursor:"pointer"}}> {"<--"} back </Button>
-          {/* {this.makeFeature.bind(this)} */}
-          < Feature artistName={this.state.artistName} />
-          
-          </div> }
+          < Feature artistName={this.state.artistName}  />
+          <Button onClick={this.CloseArtist.bind(this)}>back</Button>
 
-         
-        </div>
+          </div> }
+            
+          <Item>Click to learn more</Item>
+
+         </section>
+      </div>
     );
   }
 }
