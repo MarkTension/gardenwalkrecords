@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ac7f34c.chunk.css",
-    "main.js": "/static/js/main.b048868c.chunk.js",
-    "main.js.map": "/static/js/main.b048868c.chunk.js.map",
+    "main.css": "/static/css/main.0bcdbb98.chunk.css",
+    "main.js": "/static/js/main.2949eecc.chunk.js",
+    "main.js.map": "/static/js/main.2949eecc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bf6daf9d.js",
     "runtime-main.js.map": "/static/js/runtime-main.bf6daf9d.js.map",
-    "static/js/2.1ff2216e.chunk.js": "/static/js/2.1ff2216e.chunk.js",
-    "static/js/2.1ff2216e.chunk.js.map": "/static/js/2.1ff2216e.chunk.js.map",
+    "static/js/2.e4ae464f.chunk.js": "/static/js/2.e4ae464f.chunk.js",
+    "static/js/2.e4ae464f.chunk.js.map": "/static/js/2.e4ae464f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2a6ccbb1c21d3d27ffa6efa3b78323fa.js": "/precache-manifest.2a6ccbb1c21d3d27ffa6efa3b78323fa.js",
+    "precache-manifest.f146f7f10ec176d4010b649232bd48c7.js": "/precache-manifest.f146f7f10ec176d4010b649232bd48c7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6ac7f34c.chunk.css.map": "/static/css/main.6ac7f34c.chunk.css.map",
-    "static/js/2.1ff2216e.chunk.js.LICENSE.txt": "/static/js/2.1ff2216e.chunk.js.LICENSE.txt",
+    "static/css/main.0bcdbb98.chunk.css.map": "/static/css/main.0bcdbb98.chunk.css.map",
+    "static/js/2.e4ae464f.chunk.js.LICENSE.txt": "/static/js/2.e4ae464f.chunk.js.LICENSE.txt",
     "static/media/Optimized-subconsciousGarden.png": "/static/media/Optimized-subconsciousGarden.826e5be9.png",
     "static/media/gardenArtist2.png": "/static/media/gardenArtist2.b25f790e.png",
     "static/media/lanceHoot.JPG": "/static/media/lanceHoot.f3626a72.JPG",
     "static/media/m4.png": "/static/media/m4.e4bfe799.png",
+    "static/media/merch_kaarsvet.png": "/static/media/merch_kaarsvet.8ccff66d.png",
     "static/media/minorMileage.jpg": "/static/media/minorMileage.57300231.jpg",
     "static/media/springwalkcollection.png": "/static/media/springwalkcollection.9cd515ae.png",
     "static/media/stringPalooza2.png": "/static/media/stringPalooza2.57200ce8.png",
@@ -24,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bf6daf9d.js",
-    "static/js/2.1ff2216e.chunk.js",
-    "static/css/main.6ac7f34c.chunk.css",
-    "static/js/main.b048868c.chunk.js"
+    "static/js/2.e4ae464f.chunk.js",
+    "static/css/main.0bcdbb98.chunk.css",
+    "static/js/main.2949eecc.chunk.js"
   ]
 }
