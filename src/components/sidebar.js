@@ -1,9 +1,11 @@
 import React from "react";
-import {Nav} from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import { withRouter } from "react-router";
 import '../stylesheets/sidebar.css'
 import styled from 'styled-components'
 import animateScrollTo from "animated-scroll-to";
+import { Link } from "react-router-dom";
+import { isBrowser } from 'react-device-detect';
 
 
 
@@ -22,40 +24,45 @@ const Item = styled.h3`
 `;
 
 
-
-
 const Sidebar = props => {
     return (
-        <>
-            <Nav className="col-md-12 sidebar"
-            >
+        // style={{ "width": isBrowser ? "10%" : "100%", "height": isBrowser ? "100%" : "10%" }}
+        <div >
+            <Nav className="col-md-12 sidebar">
                 <div className="sidebar-content" >
                     <Nav.Item>
                         <Nav.Link onClick={() => {
-                            animateScrollTo(document.querySelector("#home"));}} 
-                            ><Item>O'howdy</Item></Nav.Link>
+                            animateScrollTo(document.querySelector("#home"));
+                        }}
+                        ><Item>O'howdy</Item></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link onClick={() => {
-                            animateScrollTo(document.querySelector("#releases"));}} 
-                            ><Item>Releases</Item></Nav.Link>
+                            animateScrollTo(document.querySelector("#releases"));
+                        }}
+                        ><Item>Releases</Item></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link 
-                        onClick={() => {animateScrollTo(document.querySelector("#artists"));}} 
+                        <Nav.Link
+                            onClick={() => { animateScrollTo(document.querySelector("#artists")); }}
                         ><Item>Artists</Item></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link 
-                        onClick={() => {animateScrollTo(document.querySelector("#about"));}} 
+                        <Nav.Link
+                            onClick={() => { animateScrollTo(document.querySelector("#about")); }}
                         ><Item>About</Item></Nav.Link>
                     </Nav.Item>
-                    
-                    
+                    <Nav.Item>
+                        <Link to='/listenings'><Item>Listenings</Item></Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Link to='/blog'><Item>Blog</Item></Link>
+                    </Nav.Item>
+
+
                 </div>
             </Nav>
-
-        </>
-        );
-  };
-  export default Sidebar
+        </div>
+    );
+};
+export default Sidebar

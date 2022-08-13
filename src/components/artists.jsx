@@ -21,7 +21,8 @@ const HoverText = styled.h3`
 
 var imDict = {
   "Lance Hoot": hootIm,
-  "Tensen Park": tensenIm
+  "Tensen Park": tensenIm,
+  "Lion's Den": tensenIm,
 };
 var imArray = [hootIm, tensenIm]
 var counter = 0
@@ -85,6 +86,7 @@ class Artists extends React.Component {
           <div>
             <HoverText id="Tensen Park" onClick={this.ProcessClick.bind(this)} style={{marginLeft:"-40%",paddingLeft:"0%",cursor:"pointer"}}> Tensen Park</HoverText>
             <HoverText id="Lance Hoot" onClick={this.ProcessClick.bind(this)} style={{marginLeft:"0%",paddingLeft:"0%",cursor:"pointer"}}> Lance Hoot </HoverText>
+            <HoverText id="Lion's Den" onClick={this.ProcessClick.bind(this)} style={{marginLeft:"40%",paddingLeft:"0%",cursor:"pointer"}}> Lion's Den </HoverText>
           </div> 
           :
           <div>

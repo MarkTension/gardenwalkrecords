@@ -75,9 +75,9 @@ class Feature extends React.Component {
                   {socialLinksPark}
                 </ItemSmall>
               
-             </div> 
+             </div>
              : 
-             <div style={{  background: "rgba(0,0,0,0.5)"          }}> 
+             <div style={{  background: "rgba(0,0,0,0.5)" }}> 
                <Title style={{fontSize:"2em",background:"none",marginTop:"5%",textAlign:"left",marginLeft:"5%"}}>
                   {this.props.artistName} 
                 </Title>

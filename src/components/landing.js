@@ -1,11 +1,10 @@
 import React from "react";
 import styled from 'styled-components'
 import gardenImage from "../images/subconsciousGarden.png";
-import {Item, Hoverr, HoverText, Text} from "./textConstants";
+import { Item, Hoverr, HoverText, Text } from "./textConstants";
 // import { Box, Flex, Image } from "rebass";
 import BandcampPlayer from 'react-bandcamp'
-import {isBrowser} from 'react-device-detect';
-
+import { isBrowser } from 'react-device-detect';
 
 
 const HoverLinks = styled.h3`
@@ -31,52 +30,52 @@ const HoverLinks = styled.h3`
 function ImageMobile() {
 
   if (isBrowser) {
-    return <img src={gardenImage} height="100%" style={{marginRight:"5%"}} className="label-logo" alt="logo"/>
+    return <img src={gardenImage} height="100%" style={{ marginRight: "5%" }} className="label-logo" alt="logo" />
   }
-  else{
-    return <img src={gardenImage} width="100%"  className="label-logo" alt="logo"/>
+  else {
+    return <img src={gardenImage} width="100%" className="label-logo" alt="logo" />
   }
 }
 
 
 
 const Landing = props => {
-    return (
-        <div id="landing" style = {{marginTop:"2%",height:"100vh",alignContent:"right"}} >
+  return (
+    <div id="landing" style={{ marginTop: "2%", height: "100vh", alignContent: "right" }} >
 
-            <Hoverr>
-            Garden Walk Records
-            </Hoverr>
-            
-            <HoverLinks style={{right:"12%",cursor:"pointer"}}>
-            <a href="https://www.instagram.com/gardenwalk.records/"> Follow us on Instagram </a>
-            </HoverLinks>
-            <HoverLinks style={{top:"18%",right:"8%",cursor:"pointer"}}>
-            <a href="https://www.facebook.com/MRFrecordings/"> MRF recordings </a>
-            </HoverLinks>
-            
-            <HoverLinks style={{top:"26%",cursor:"pointer"}}>
-            <a href="mailto:tensen.mark@gmail.com">contact us</a>
-            </HoverLinks>
+      <Hoverr>
+        Garden Walk Records
+      </Hoverr>
 
-            < ImageMobile />
+      <HoverLinks style={{ right: "12%", cursor: "pointer" }}>
+        <a href="https://www.instagram.com/gardenwalk.records/"> Follow us on Instagram </a>
+      </HoverLinks>
+      <HoverLinks style={{ top: "18%", right: "8%", cursor: "pointer" }}>
+        <a href="https://www.facebook.com/MRFrecordings/"> MRF recordings </a>
+      </HoverLinks>
 
-            <Item style={{width:"90%",textAlign:"right",fontSize:"0.9em"}}>
-              Amsterdam-based experimental music label.
-              </Item>
-              <Item style={{width:"90%",textAlign:"right",fontSize:"0.9em"}}>
-              We release experiments exploring: 'What is peak-aliveness of sound?''
-              </Item>
-            
-            <Item style={{width:"90%",textAlign:"right",fontSize:"0.9em"}}>
-              Stay updated on our releases via <a href="https://www.instagram.com/gardenwalk.records/">instagram</a>.
-              For info, or licensing, <a href="mailto:tensen.mark@gmail.com"> email us</a>
+      <HoverLinks style={{ top: "26%", cursor: "pointer" }}>
+        <a href="mailto:tensen.mark@gmail.com">contact us</a>
+      </HoverLinks>
 
-            </Item>
+      < ImageMobile />
 
-        </div>
+      <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em" }}>
+        O'Howdy! We're an Amsterdam-based experimental music label.
+      </Item>
+      <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em" }}>
+        We release experiments exploring: 'What is peak-aliveness of sound?''
+      </Item>
 
-        
-        );
-  };
-  export default Landing
+      <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em" }}>
+        Stay updated on our releases via <a href="https://www.instagram.com/gardenwalk.records/">instagram</a>.
+        For info, or licensing, <a href="mailto:tensen.mark@gmail.com"> email us</a>
+
+      </Item>
+
+    </div>
+
+
+  );
+};
+export default Landing

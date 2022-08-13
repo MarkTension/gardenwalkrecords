@@ -1,21 +1,21 @@
 import React from 'react';
 import './App.css';
-import ReactGA from 'react-ga';
 import Sidebar from "./components/sidebar.js";
-import Landing from "./components/landing.js";
-import Releases from "./components/releases.jsx";
-import Artists from "./components/artists.jsx";
-import About from "./components/about.js";
+import Home from "./components/home.js";
+import Listenings from "./components/listenings.js";
+import Blog from "./components/blog.js";
+
 import './stylesheets/sidebar.css'
-import {Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import {isBrowser} from 'react-device-detect';
+import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import { isBrowser } from 'react-device-detect';
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
 
 function SidebarIfBrowser() {
 
   if (isBrowser) {
     return <Sidebar />
   }
-  else{
+  else {
     return null
   }
 }
@@ -23,21 +23,21 @@ function SidebarIfBrowser() {
 
 
 function App() {
-  
+
   return (
-    
+
     <div className="App" >
-      
+
       <header className="App-header" width="100%" >
-        <div id="home" width="100%" style={{marginLeft: isBrowser ? "15%" : "0%" ,marginRight:"0%",padding:"0%"}}>
-          <Landing style={{height:"100vh"}} />
-          <Releases style = {{height:"100vh"}}  />
-          <Artists style = {{height:"100vh"}}/>
-          <About  />
-          
+        <div id="home" width="100%" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%"}}>
+
+            <Switch>
+              <Route path='/' component={Home} exact/>
+              <Route path='/listenings' component={Listenings} />
+              <Route path='/blog' component={Blog} />
+            </Switch>
+
         </div>
-        
-        <SidebarIfBrowser />
 
       </header>
     </div>
