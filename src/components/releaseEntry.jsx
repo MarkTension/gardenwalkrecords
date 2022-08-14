@@ -45,9 +45,9 @@ const releaseStylesheet = {
             {this.props.title}
           </Item>
           <Image src={this.props.image} width="70%" onClick={goToLink.bind(this)} style={{cursor:"pointer"}}/>
-          
+          {this.props.albumCode != "None" ? 
           <BandcampPlayer tyle={{paddingBottom:"0%"}} album={this.props.albumCode} size="small" linkcol="FF8484" bgcol="black"/> 
-          
+          : null}
           {/* FFD99B */}
           
         </div>

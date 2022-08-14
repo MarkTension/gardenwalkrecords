@@ -33,9 +33,9 @@ const textStyle = {
 const tensenParkContent1 = "Tensen Park is an ambient music research project. We're using computational methods combined with old audio equipment to explore the generation and organification of texture, rhythm and melody." 
 const tensenParkContent2 = "Our goal is making a series of meditations in sound, and great ambient music."
 
-const lanceHootContent1 = "Lance Hoot is Casper van der Lans."
-const lanceHootContent2 = "Working as an audio-engineer and music producer Casper encounters many ideas of ways things could or sometimes should sound. Music by Lance Hoot is the product of both sonic and conceptual experiments, more than often incorporating (at times broken) taperecorders and old Musique Concrète techniques - though not necessarily old-fashioned sounding. His music also embodies an antidote against some aspects of producing music for others: where one would work in a non-destructive way and take a lot of time, sometimes the momentum gets lost. Lance Hoot is destructive, cumbersome and in the moment "
-const lanceHootContent3 = "Lance Hoot is destructive, cumbersome and in the moment "
+const lanceHootContent1 = "lmnop is Casper van der Lans."
+const lanceHootContent2 = "Working as an audio-engineer and music producer Casper encounters many ideas of ways things could or sometimes should sound. Music by lmnop is the product of both sonic and conceptual experiments, more than often incorporating (at times broken) taperecorders and old Musique Concrète techniques - though not necessarily old-fashioned sounding. His music also embodies an antidote against some aspects of producing music for others: where one would work in a non-destructive way and take a lot of time, sometimes the momentum gets lost. lmnop is destructive, cumbersome and in the moment "
+const lanceHootContent3 = "lmnop is destructive, cumbersome and in the moment "
 const socialLinksPark = 
 <div><SocialIcon url="http://instagram.com/tensen.park" bgColor="white"/>
 <SocialIcon url="http://marktension.nl" bgColor="white"/>

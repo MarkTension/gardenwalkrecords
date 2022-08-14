@@ -14,13 +14,16 @@ import {  } from "react-router-dom";
 
 function SidebarIfBrowser() {
 
+  return <Sidebar />
+
   // if (isBrowser) {
-    return <Sidebar />
+  //   return <Sidebar />
   // }
   // else {
   //   return null
   // }
 }
+
 
 
 

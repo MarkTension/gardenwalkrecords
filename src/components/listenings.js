@@ -6,6 +6,7 @@ import {Item, Title} from "./textConstants"
 import { Switch } from "react-router-dom";
 
 import Markdown from "markdown-to-jsx";
+import { isBrowser } from 'react-device-detect';
 
 
 
@@ -26,7 +27,7 @@ const Listenings = props => {
 
 
   return (
-    <div id="listenings" style={{ marginTop: "2%",  alignContent: "right", background:"white" }} >
+    <div id="listenings" style={{ marginTop: isBrowser ? "2%" : "16%",  alignContent: "right", background:"white" }} >
       <Title style={{ width: "90%", textAlign: "center"}}>
         Listenings
       </Title>

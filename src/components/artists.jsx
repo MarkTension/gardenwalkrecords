@@ -4,6 +4,7 @@ import {Item, Title, Button} from "./textConstants";
 import Feature from "./featureDescriptor"
 import hootIm from "../images/lanceHoot.JPG";
 import tensenIm from "../images/tensenParkArtist.jpg";
+import lionsIm from "../images/lionsIm.jpg";
 import ReactGA from 'react-ga';
 
 
@@ -20,11 +21,11 @@ const HoverText = styled.h3`
 `;
 
 var imDict = {
-  "Lance Hoot": hootIm,
+  "lmnop": hootIm,
   "Tensen Park": tensenIm,
-  "Lion's Den": tensenIm,
+  "Lion's Den": lionsIm,
 };
-var imArray = [hootIm, tensenIm]
+var imArray = [hootIm, tensenIm, lionsIm]
 var counter = 0
 
 class Artists extends React.Component {
@@ -35,7 +36,7 @@ class Artists extends React.Component {
       nameActive: 0,
       round: this.props.round,
       artistName: "none",
-      image: imDict["Lance Hoot"]
+      image: imDict["lmnop"]
     };
     
   }
@@ -43,7 +44,7 @@ class Artists extends React.Component {
   tick() {
     if (this.state.showNames == true) {
       this.setState({
-        image: imArray[counter%2]
+        image: imArray[counter%3]
       });
       counter+=1
     }
@@ -85,7 +86,7 @@ class Artists extends React.Component {
           {this.state.showNames ? 
           <div>
             <HoverText id="Tensen Park" onClick={this.ProcessClick.bind(this)} style={{marginLeft:"-40%",paddingLeft:"0%",cursor:"pointer"}}> Tensen Park</HoverText>
-            <HoverText id="Lance Hoot" onClick={this.ProcessClick.bind(this)} style={{marginLeft:"0%",paddingLeft:"0%",cursor:"pointer"}}> Lance Hoot </HoverText>
+            <HoverText id="lmnop" onClick={this.ProcessClick.bind(this)} style={{marginLeft:"0%",paddingLeft:"0%",cursor:"pointer"}}> lmnop </HoverText>
             <HoverText id="Lion's Den" onClick={this.ProcessClick.bind(this)} style={{marginLeft:"40%",paddingLeft:"0%",cursor:"pointer"}}> Lion's Den </HoverText>
           </div> 
           :

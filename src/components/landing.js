@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
-import gardenImage from "../images/subconsciousGarden.png";
+// import gardenImage from "../images/landing.jpeg";
+import gardenImage from "../images/cactii.png";
 import { Item, Hoverr, HoverText, Text } from "./textConstants";
 // import { Box, Flex, Image } from "rebass";
 import BandcampPlayer from 'react-bandcamp'
@@ -27,21 +28,10 @@ const HoverLinks = styled.h3`
 `;
 
 
-function ImageMobile() {
-
-  if (isBrowser) {
-    return <img src={gardenImage} height="100%" style={{ marginRight: "5%" }} className="label-logo" alt="logo" />
-  }
-  else {
-    return <img src={gardenImage} width="100%" className="label-logo" alt="logo" />
-  }
-}
-
-
 
 const Landing = props => {
   return (
-    <div id="landing" style={{ marginTop: "2%", height: "100vh", alignContent: "right" }} >
+    <div id="landing" style={{ marginTop: "2%", height: "100vh", maxWidth: "100vw", alignContent: "right" }} >
 
       <Hoverr>
         Garden Walk Records
@@ -58,7 +48,7 @@ const Landing = props => {
         <a href="mailto:tensen.mark@gmail.com">contact us</a>
       </HoverLinks>
 
-      < ImageMobile />
+      <img src={gardenImage} height="100%" style={{ marginRight: isBrowser ? "0%" : "0%" }} className="label-logo" alt="logo" />
 
       <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em" }}>
         O'Howdy! We're an Amsterdam-based experimental music label.
