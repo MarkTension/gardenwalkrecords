@@ -5,7 +5,7 @@ Good Music, headphones, and a 40 minute oasis of time can be a damn fine experie
 
 Over a morning burrito and black coffee, we tried to come up with ways to make exploring good music part of our week. We thought of this: 
 
-What if we give you an incentive for fully immersing yourself in an album by sending you a weekly newsletter with a chosen album, carefully selected and accompanied by a motivation on why this album deserves some focussed listening. To stay motivated, we hope to do this with a bunch of people, united under the weekly newsletter and a Discord-group where thoughts on the album can be shared.
+    What if we give you an incentive for fully immersing yourself in an album by sending you a weekly newsletter with a chosen album, carefully selected and accompanied by a motivation on why this album deserves some focussed listening. To stay motivated, we hope to do this with a bunch of people, united under the weekly newsletter and a Discord-group where thoughts on the album can be shared.
 
 ### How it works specifically:
 - There’s a weekly-listenings-email and discord group
