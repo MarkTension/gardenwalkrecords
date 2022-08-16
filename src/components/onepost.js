@@ -3,6 +3,7 @@ import { Item, Title } from "./textConstants"
 import Markdown from "markdown-to-jsx";
 import SidebarBack from "./sidebarBack";
 import { useParams } from "react-router-dom/cjs/react-router-dom";
+import { isBrowser } from 'react-device-detect';
 
 const OnePost = props => {
 
@@ -21,7 +22,7 @@ const OnePost = props => {
             })
     }, [])
 
-    return (<div id="onepost" style={{ background: "white", paddingBottom: '5em', paddingTop:'2em' }}>
+    return (<div id="onepost" style={{ background: "white", width: isBrowser?"80vw" : "100vw", paddingBottom: '5em', paddingTop:'2em' }}>
 
         <Title>
             {slug}
@@ -30,7 +31,7 @@ const OnePost = props => {
 
         <Markdown
 
-            style={{ textAlign: "left", margin: "5em" }}
+            style={{ textAlign: "left", margin: isBrowser?"5em%" : "2em" }}
         >
             {postContent}
         </Markdown>

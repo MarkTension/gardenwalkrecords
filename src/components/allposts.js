@@ -6,6 +6,7 @@ import SidebarBack from "./sidebarBack";
 import { Route, Link } from "react-router-dom/cjs/react-router-dom";
 import posts from '../markdowns/index.json';
 import { Flex, Box } from "rebass";
+import { isBrowser } from 'react-device-detect';
 
 const postStyle = {
     alignContent: "left",
@@ -36,7 +37,7 @@ console.log(posts.files)
 const AllPosts = props => {
 
 
-    return (<div id="albumlistenings" style={{ alignContent: "right", background: "white", paddingTop:"4%", marginLeft:"10%" }}>
+    return (<div id="albumlistenings" style={{ width:isBrowser?"80vw" : "100vw", alignContent: "right", background: "white", paddingTop:"4%", marginLeft:isBrowser?"10%" : "0%" }}>
         {posts.files.map((post, index) => (
             <div style={postStyle}>
 

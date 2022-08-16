@@ -27,21 +27,19 @@ const Listenings = props => {
 
 
   return (
-    <div id="listenings" style={{ marginTop: isBrowser ? "2%" : "16%",  alignContent: "right", background:"white" }} >
-      <Title style={{ width: "90%", textAlign: "center"}}>
+    <div id="listenings" style={{width: isBrowser ? "80vw" : "100vw", marginTop: isBrowser ? "2%" : "19%",  alignContent: "right", background:"white" }} >
+      <Title style={{ width: "100%", textAlign: "center"}}>
         Listenings
       </Title>
 
       <Markdown
-                style={{textAlign: "left", marginLeft:"15%", marginRight:"15%", fontFamily: 'Josefin Sans', fontSize:'0.8em' }}
+                style={{textAlign: "left",  marginLeft:"15%", marginRight:"15%", fontFamily: 'Josefin Sans', fontSize:'0.8em' }}
             >
                 {postContent}
             </Markdown>
       <SidebarBack />
 
     </div>
-
-
 
   );
 };

@@ -33,20 +33,14 @@ function Home() {
 
     <div className="App" >
 
-      <header className="App-header" width="100%" >
         <div id="home" width="100%" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%" }}>
-
           <Landing style={{ height: "100vh" }} />
           <Blog style={{ height: "100vh" }} />
           <Releases style={{ height: "100vh" }} />
           <Artists style={{ height: "100vh" }} />
           <About />
-
         </div>
-
         <SidebarIfBrowser />
-
-      </header>
     </div>
   );
 }
