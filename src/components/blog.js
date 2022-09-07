@@ -1,6 +1,5 @@
 import React from "react";
 import { Item, Title } from "./textConstants"
-import SidebarBack from "./sidebarBack";
 import { Route } from "react-router-dom/cjs/react-router-dom";
 import posts from '../markdowns/index.json';
 import AllPosts from './allposts.js';

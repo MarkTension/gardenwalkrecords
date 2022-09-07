@@ -20,8 +20,6 @@ function SidebarIfBrowser() {
   }
 }
 
-
-
 function App() {
 
   return (
@@ -32,11 +30,9 @@ function App() {
         <div id="home" width="100%" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%"}}>
 
             <Switch>
-
               <Route path='/' component={Home} exact/>
               <Route  path='/listenings' component={Listenings} />
               <Route path='/blog' component={Blog} />
-
             </Switch>
 
         </div>

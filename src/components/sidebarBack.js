@@ -35,9 +35,11 @@ const SidebarBack = props => {
             >
                 <div className="sidebar-content" >
                     <Nav.Item>
-                        
+                        <Link to='/'><Item>Home</Item></Link>
+                    </Nav.Item>
+                    <Nav.Item>
                         <Nav.Link
-                            onClick={ history.goBack}
+                            onClick={history.goBack}
                         ><Item>Go Back</Item></Nav.Link>
 
                     </Nav.Item>

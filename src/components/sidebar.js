@@ -36,8 +36,6 @@ const contentMobile =
     </Nav>
 
 
-// style={{ "width": isBrowser ? "10%" : "100%", "height": isBrowser ? "100%" : "10%" }}
-
 const Sidebar = props => {
     return (
         <Nav className="col-md-12 sidebar">

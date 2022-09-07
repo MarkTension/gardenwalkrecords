@@ -15,10 +15,8 @@ const postStyle = {
     // paddingLeft: "5em",
     // paddingRight: "5em",
     background: "white",
-
     height: "100%",
 };
-
 
 const linkStyle = {
     fontSize: "2em",
@@ -36,13 +34,11 @@ console.log(posts.files)
 
 const AllPosts = props => {
 
-
     return (<div id="albumlistenings" style={{ width:isBrowser?"80vw" : "100vw", alignContent: "right", background: "white", paddingTop:"4%", marginLeft:isBrowser?"10%" : "0%" }}>
         {posts.files.map((post, index) => (
             <div style={postStyle}>
 
                 <Link to={"/blog/" + post[0]} key={post} style={linkStyle}>
-
                     <Flex
                         id="team"
                         flexWrap="wrap"

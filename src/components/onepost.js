@@ -7,7 +7,6 @@ import { isBrowser } from 'react-device-detect';
 
 const OnePost = props => {
 
-
     const { slug } = useParams();
     console.log(slug)
     const [postContent, setPostContent] = useState("");

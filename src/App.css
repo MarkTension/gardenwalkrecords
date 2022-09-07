@@ -8,6 +8,24 @@
 }
 
 
+.MailchimpStyle button {
+  clear: left;
+  border-style: solid;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  font-family: 'Courier New';
+  margin: 2px;
+}
+
+.MailchimpStyle text {
+  clear: left;
+  color: yellow;
+  background-color: white;
+  margin: 2px;
+}
+
+
 .label-logo {
   height: 80vh;
   pointer-events: none;
