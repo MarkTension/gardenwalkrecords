@@ -37,7 +37,7 @@ function Home() {
         <div id="home" width="100%" style={{ marginLeft: isBrowser ? "15%" : "0%", marginRight: "0%", padding: "0%" }}>
           <Landing  />
           <Blog  />
-          <MailchimpForms  style={{ height: "100vh" }} /> 
+          <MailchimpForms  style={{ height: "100vh" }} text = "... or join our mailing-list" /> 
 
           <Artists style={{ height: "100vh" }} />
 

@@ -17,4 +17,4 @@ What if we give you an incentive for fully immersing yourself in an album by sen
 - Each week’s experiences from discord get scanned by Camiel and me, so we will select a few comments that will appear as an afterthought with each chosen album email.
 - Repeat 🔁
 
-<b>Wanna join?</b> Subscribe to the weekly-listenings email and/or discord group!
+<b>Wanna join?</b> Subscribe to the weekly-listenings email in the form below and join <a href="https://discord.gg/KgYjkJrH"> our discord group </a> !

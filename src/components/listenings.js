@@ -4,11 +4,9 @@ import SidebarBack from "./sidebarBack";
 import gardenImage from "../images/subconsciousGarden.png";
 import {Item, Title} from "./textConstants"
 import { Switch } from "react-router-dom";
-
 import Markdown from "markdown-to-jsx";
 import { isBrowser } from 'react-device-detect';
-
-
+import MailchimpForms from "./signupform.js";
 
 const Listenings = props => {
 
@@ -32,12 +30,17 @@ const Listenings = props => {
         Listenings
       </Title>
 
+
       <Markdown
                 style={{textAlign: "left",  marginLeft:"15%", marginRight:"15%", fontFamily: 'Josefin Sans', fontSize:'0.8em' }}
             >
                 {postContent}
             </Markdown>
       <SidebarBack />
+
+      <MailchimpForms style={{ height: "100vh"}} text = "signup here!" /> 
+      <div style={{paddingBottom:"4%"}}></div>
+      <div style={{paddingBottom:"10%"}}></div>
 
     </div>
 

@@ -17,7 +17,8 @@ const MailchimpForms = props => {
     return (
         <div id="signup-form" height="100vh" style={{ marginTop: "4%"}} >
             <Item>
-                ... or join our mailing-list
+            {props.text}
+                {/* ... or join our mailing-list */}
             </Item>
             < Mailchimp
                 className="MailchimpStyle"
