@@ -1,2 +1,0 @@
-(this.webpackJsonpspruce_records=this.webpackJsonpspruce_records||[]).push([[4],{98:function(s,c,e){s.exports=e.p+"static/media/Garden Walk Records.b89ccd19.md"}}]);
-//# sourceMappingURL=4.4b14927b.chunk.js.map
