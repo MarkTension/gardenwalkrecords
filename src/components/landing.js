@@ -2,9 +2,8 @@ import React from "react";
 import styled from 'styled-components'
 // import gardenImage from "../images/landing.jpeg";
 import gardenImage from "../images/cactii.png";
-import { Item, Hoverr, HoverText, Text } from "./textConstants";
+import { Item, Hoverr } from "./textConstants";
 // import { Box, Flex, Image } from "rebass";
-import BandcampPlayer from 'react-bandcamp'
 import { isBrowser } from 'react-device-detect';
 
 
@@ -22,8 +21,6 @@ const HoverLinks = styled.h3`
     transition: transform 100ms ease-in-out;
     &:hover {
       transform: scale(1.2);
-      /* font-weight: 200; */
-      /* text-decoration: underline; */
     }
 `;
 
@@ -54,18 +51,14 @@ const Landing = props => {
         O'Howdy! We're an Amsterdam-based experimental music label.
       </Item>
       <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em" }}>
-        We release experiments exploring: 'What is peak-aliveness of sound?''
+        We're having fun with ambient, gritty-analog-equipment, computational methods, and folk
       </Item>
 
       <Item style={{ width: "90%", textAlign: "right", fontSize: "0.9em" }}>
         Stay updated on our releases via <a href="https://www.instagram.com/gardenwalk.records/">instagram</a>.
         For info, or licensing, <a href="mailto:tensen.mark@gmail.com"> email us</a>
-
       </Item>
-
     </div>
-
-
   );
 };
 export default Landing

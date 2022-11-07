@@ -5,10 +5,7 @@ import styled from 'styled-components'
 import animateScrollTo from "animated-scroll-to";
 import { Link, useHistory } from "react-router-dom";
 
-
-
 const Item = styled.h3`
-
   font-size: 0.8em;
   text-align: center;
   color: black;
@@ -21,16 +18,12 @@ const Item = styled.h3`
   }
 `;
 
-
-
-
 const SidebarBack = props => {
 
     const history = useHistory();
 
     return (
         <>
-
             <Nav className="col-md-12 sidebar"
             >
                 <div className="sidebar-content" >

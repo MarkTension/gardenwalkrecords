@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom/cjs/react-router-dom";
 import { isBrowser } from 'react-device-detect';
 
 const OnePost = props => {
-
     const { slug } = useParams();
     console.log(slug)
     const [postContent, setPostContent] = useState("");
@@ -26,15 +25,12 @@ const OnePost = props => {
         <Title>
             {slug}
         </Title>
-        
 
         <Markdown
-
             style={{ textAlign: "left", margin: isBrowser?"5em%" : "2em" }}
         >
             {postContent}
         </Markdown>
-
         <SidebarBack />
     </div>
     );
