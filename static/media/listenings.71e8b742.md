@@ -14,7 +14,7 @@ What if we give you an incentive for fully immersing yourself in an album by sen
 - Block time in your agenda for the listening session.
 - Listen to the album (doing little else)
 - (Optionally) discuss on discord anything you want to share about it
-- Each week’s experiences from discord get scanned by Camiel and me, so we will select a few comments that will appear as an afterthought with each chosen album email.
+- Each week’s experiences from discord get scanned by us, so we will select a few comments that will appear as an afterthought with each chosen album email.
 - Repeat 🔁
 
-<b>Wanna join?</b> Subscribe to the weekly-listenings email in the form below and join <a href="https://discord.gg/KgYjkJrH"> our discord group </a> !
+<b>Wanna join?</b> Subscribe to the weekly-listenings email in the form below and join <a href="https://discord.gg/7waQJ27Y39"> our discord group </a> !
